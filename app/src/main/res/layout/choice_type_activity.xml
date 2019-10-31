@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="14dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/nav_icon_search" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="搜索" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/thingsfix_tabMode"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/black">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/thingsfix_tab1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分类" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/thingsfix_tab2_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品牌" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/thingsfix_tab3_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺" />
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
